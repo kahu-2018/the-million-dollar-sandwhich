@@ -5,9 +5,14 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       // Inserts seed entries
       return knex('table_name').insert([
-        {id: 1, colName: 'rowValue1'},
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
+        {sandwich_id: 1, ingredients_id: 2},
+        {sandwich_id: 1, ingredients_id: 5},
+        {sandwich_id: 1, ingredients_id: 7},
+        {sandwich_id: 1, ingredients_id: 10},
+        {sandwich_id: 2, ingredients_id: 3},
+        {sandwich_id: 2, ingredients_id: 6},
+        {sandwich_id: 2, ingredients_id: 9},
+        {sandwich_id: 2, ingredients_id: 11},
       ]);
     });
 };
